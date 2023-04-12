@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<!-- Enlace al archivo de estilos de Bootstrap -->
+    
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    
+    <!-- Enlace al archivo de estilos de DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css">
+    
+    <!-- Enlace al archivo de estilos personalizado para la página -->
+    <link rel="stylesheet" href="estadisticas.css">
+    , initial-scale=1.0">
+    <!-- Crear una tabla HTML -->
+<table id="tabla-estadisticas" class="table">
+    <thead>
+      <tr>
+        <th>Producto</th>
+        <th>Vendidos</th>
+        <th>Cancelados</th>
+        <th>Devueltos</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Producto 1</td>
+        <td>25</td>
+        <td>2</td>
+        <td>1</td>
+        <td>22</td>
+      </tr>
+      <tr>
+        <td>Producto 2</td>
+        <td>13</td>
+        <td>0</td>
+        <td>1</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Producto 3</td>
+        <td>18</td>
+        <td>1</td>
+        <td>0</td>
+        <td>17</td>
+      </tr>
+      <!-- Otras filas aquí -->
+    </tbody>
+
+  </table>
+  <!-- Enlace al archivo de script de jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Enlace al archivo de script de DataTables -->
+<script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+
+<!-- Inicializar el plugin DataTables en la tabla creada anteriormente -->
+<script>
+  $(document).ready( function () {
+    $('#tabla-estadisticas').DataTable();
+  } );
+</script>
+
+</body>
+</html>

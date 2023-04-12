@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "dancing-font";
+  src: url("../fonts/dancing_script.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  min-height: 100vh;
+  position: relative;
+}
+main{
+  min-height: calc(100vh - 176px);
+}
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+.header-container {
+  background-color: rgba(249, 249, 5, 0.145);
+  color: rgba(202, 3, 3, 0.84);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-title{
+  font-family: "dancing-font";
+}
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  height: 50px;
+  padding-inline-end: 20px;
+  background-color: rgb(247, 249, 250);
+}
+.nav-li {
+  padding-left: 10px;
+}
+.nav-link:hover {
+  color: rgb(10, 1, 18);
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer {
+  min-height: 50px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.galeria {
+  max-width: 30vw;
+}
+.galeria-title, .nosotros-title, .main-contact{
+  font-family: "dancing-font";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.btn-purple{
+  color: white;
+  background-color: green;
+  font-weight: bold;
+}
+.btn-purple:hover{
+  border: 2px solid rgb(168, 157, 178);
+  background-color: rgba(249, 249, 5, 0.207);
+  color: rgba(202, 3, 3, 0.84);
+}
